@@ -12,6 +12,9 @@ type LoginControllers struct {
 
 func (l *LoginControllers) Post() {
 	var user models.User
-	l.ParseForm(&user)
+	err := l.ParseForm(&user)
+	if err != nil {
+		l.Ctx.WriteString("用户")
+	}
 	fmt.Println(user.Phone)
 }
