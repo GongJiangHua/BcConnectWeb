@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="387128c3-76af-4901-acda-802631048519" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/btcService/Btcservice.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Bip.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/BlockChainInfo.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/SoftFork.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/bcRpcUtils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/constants.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

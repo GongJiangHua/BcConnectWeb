@@ -21,6 +21,7 @@ func main() {
 	//	fmt.Println(err.Error())
 	//}
 	//fmt.Println(result)
+	fmt.Println("这啥玩意儿啊")
 	beego.Run()
 }
 
