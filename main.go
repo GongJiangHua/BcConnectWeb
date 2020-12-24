@@ -1,21 +1,26 @@
 package main
 
 import (
-	"BitConnectWeb/db_mysql"
-	_ "BitConnectWeb/routers"
+	"BtWeb/bccommand"
+	"BtWeb/db_mysql"
+	_ "BtWeb/routers"
+	"fmt"
 	"github.com/astaxie/beego"
-	_"github.com/go-sql-driver/mysql"
-
 )
 
 func main() {
-	//连接数据库
-	db_mysql.ConnectDb()
-	//设置静态资源文件映射
-	beego.SetStaticPath("/js","./static/js")
-	beego.SetStaticPath("/img","./static/img")
+	db_mysql.Connect()
+    address:=bccommand.GetAddress()
+    fmt.Println(address)
+	beego.SetStaticPath("/js", "./static/js")
 	beego.SetStaticPath("/css","./static/css")
-	beego.Run()
+	beego.SetStaticPath("/img","./static/img")
 
+    //result,err:=GetBlockCount()
+	//if err!=nil {
+	//	fmt.Println(err.Error())
+	//}
+	//fmt.Println(result)
+	beego.Run()
 }
 
