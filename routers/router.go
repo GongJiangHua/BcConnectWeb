@@ -1,13 +1,21 @@
 package routers
 
 import (
-	"BtWeb/controllers"
+	"Item/controllers"
 	"github.com/astaxie/beego"
 )
 
 func init() {
     beego.Router("/", &controllers.MainController{})
-    beego.Router("/register",&controllers.RegisterConntroller{})
-    beego.Router("/login",&controllers.LoginController{})
-    beego.Router("/bcsearch",&controllers.SearchController{})
+
+    //登录接口
+    beego.Router("/home",&controllers.LoginController{})
+
+    //注册接口
+    beego.Router("/register",&controllers.RegisterController{})
+
+
+   beego.Router("/register_sms",&controllers.RegisterSmsController{})
+
+
 }
